@@ -8,7 +8,7 @@ return array(
 	// application components
 	'components'=>array(
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/learnlang.sqlite.db',
 		),
 		// uncomment the following to use a MySQL database
 		/*

@@ -9,7 +9,7 @@ class m110625_112021_languages_table extends CDbMigration
         $this->createTable(
             $this->table,
             array(
-                'id'        => 'PK',
+                'id'        => 'pk',
                 'code'      => 'varchar(25)',
                 'name'      => 'varchar(100)',
                 'active_yn' => 'int default 0'

@@ -9,7 +9,7 @@ class m110625_113013_word_table extends CDbMigration
         $this->createTable(
             $this->table,
             array(
-                'id'            => 'PK',
+                'id'            => 'pk',
                 'alphabet_id'   => 'int not null',
                 'word'          => 'varchar(255)',
                 'in_english'    => 'varchar(255)',

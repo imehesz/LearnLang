@@ -10,7 +10,12 @@
                     $word = Word::model()->find( array( 'condition' => 'alphabet_id=:letter_id', 'order' => 'RANDOM()', 'params' => array( ':letter_id' => $letter->id ) ) ); 
                     if( $word ) :
                 ?>
-                        <div style="height:125px;overflow:hidden;"><?php echo CHtml::image( Yii::app()->request->baseUrl . '/files/' . $word->picture, null, array( 'width' => 100 ) ); ?></div>
+                        <div style="height:125px;overflow:hidden;">
+                            <?php 
+                                echo CHtml::image( 
+                                        Yii::app()->request->baseUrl . '/imageDisplay.php/' . $word->picture . '?image=' . Yii::app()->request->baseUrl . '/files/' . $word->picture . '&width=100' ); 
+                            ?>
+                        </div>
                         <div><h2><?php echo $word->word; ?></h2></div>
                     <?php endif; ?>
             </div>

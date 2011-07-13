@@ -35,7 +35,7 @@
                                             ),
                                         ));
                         ?>
-                            <iframe width="425" height="349" src="<?php echo $word->video ?>?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="425" height="349" src="<?php echo $word->video ?>" frameborder="0" allowfullscreen></iframe>
                         <?php
                             $this->endWidget('zii.widgets.jui.CJuiDialog');
 
